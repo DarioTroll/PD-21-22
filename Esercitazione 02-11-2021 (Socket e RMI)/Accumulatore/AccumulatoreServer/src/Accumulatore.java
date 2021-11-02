@@ -5,11 +5,11 @@ public class Accumulatore {
         this.attuale=0;
     }
 
-    public synchronized void accumula (int quanto) {
+    public void accumula (int quanto) {
         this.attuale+=quanto;
     }
     
-    public synchronized int getAttuale () {
+    public int getAttuale () {
         return attuale;
     }
 }
